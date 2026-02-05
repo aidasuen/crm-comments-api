@@ -51,9 +51,7 @@ Request Body:
 ```
 {
   "email": "user@example.com",
-  
   "password": "strongPassword123",
-  
   "role": "AUTHOR" // Варианты: AUTHOR, USER
 }
 ```
@@ -92,9 +90,7 @@ Request Body:
 ```
 {
   "user_id": "uuid-автора",
-  
   "title": "Написать документацию",
-  
   "description": "Подготовить подробный README"
 }
 ```
@@ -106,14 +102,10 @@ Success Response (201 Created):
 ```
 {
   "id": "uuid-задачи",
-  
   "user_id": "uuid-автора",
-  
   "title": "Написать документацию",
-  
-  "description": "Подготовить подробный README",
-  
-  "created_at": "2026-02-05T..."
+   "description": "Подготовить подробный README",
+   "created_at": "2026-02-05T..."
 }
 ```
 
@@ -126,9 +118,7 @@ Request Body:
 ```
 {
   "comment": "Надо доделать!",
-  
-  "user_id": "uuid-автора",
-  
+ "user_id": "uuid-автора",
   "task_id": "uuid-задачи"
 }
 ```
@@ -140,10 +130,9 @@ Success Response (201 Created):
 ```
 {
   "id": "uuid-комментария",
- 
   "comment": "Надо доделать!",
   "user_id": "uuid-автора",
-  ```
   "task_id": "uuid-задачи",
   "created_at": "2026-02-05T..."
 }
+```
